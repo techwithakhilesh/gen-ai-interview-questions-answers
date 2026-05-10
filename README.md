@@ -1,0 +1,1078 @@
+# Generative AI / AI Engineer Interview Questions & Answers (Beginner to Expert)
+
+A complete roadmap-style interview guide for JavaScript developers transitioning into AI Engineering, Generative AI, LLM Apps, AI Agents, and AI-powered SaaS development.
+
+Covers:
+- AI Fundamentals
+- LLMs
+- Prompt Engineering
+- RAG
+- AI Agents
+- Vector Databases
+- Fine-Tuning
+- AI Architecture
+- Production AI Systems
+- JavaScript AI Ecosystem
+
+Based on current AI engineering interview trends and production AI systems. :contentReference[oaicite:0]{index=0}
+
+---
+
+# 📚 Table of Contents
+
+- [AI Fundamentals](#-ai-fundamentals)
+- [Machine Learning Basics](#-machine-learning-basics)
+- [LLMs & Transformers](#-llms--transformers)
+- [Prompt Engineering](#-prompt-engineering)
+- [Embeddings & Vector Databases](#-embeddings--vector-databases)
+- [RAG Systems](#-rag-systems)
+- [AI Agents](#-ai-agents)
+- [Fine-Tuning](#-fine-tuning)
+- [AI System Design](#-ai-system-design)
+- [Production AI Engineering](#-production-ai-engineering)
+- [JavaScript AI Ecosystem](#-javascript-ai-ecosystem)
+- [Scenario-Based Questions](#-scenario-based-questions)
+
+---
+
+# 🤖 AI Fundamentals
+
+---
+
+## 1. What is Artificial Intelligence?
+
+### Answer
+
+Artificial Intelligence (AI) is the simulation of human intelligence by machines.
+
+AI systems can:
+- Learn
+- Reason
+- Predict
+- Generate content
+- Make decisions
+
+### Real Examples
+
+- ChatGPT
+- Self-driving cars
+- Recommendation systems
+- AI voice assistants
+
+:contentReference[oaicite:1]{index=1}
+
+---
+
+## 2. Difference between AI, ML, Deep Learning, and Generative AI?
+
+| Technology | Description |
+|---|---|
+| AI | Broad field of intelligent systems |
+| ML | Machines learn from data |
+| Deep Learning | Neural-network-based ML |
+| Generative AI | Creates new content |
+
+### Simple Analogy
+
+```txt
+AI
+ └── ML
+      └── Deep Learning
+            └── Generative AI
+```
+
+:contentReference[oaicite:2]{index=2}
+
+---
+
+## 3. What is Generative AI?
+
+### Answer
+
+Generative AI creates new content such as:
+- Text
+- Images
+- Audio
+- Code
+- Video
+
+### Popular Models
+
+- ChatGPT
+- Gemini
+- Claude
+- Midjourney
+- Stable Diffusion
+
+:contentReference[oaicite:3]{index=3}
+
+---
+
+## 4. What is an LLM?
+
+### Answer
+
+LLM = Large Language Model.
+
+These are massive AI models trained on huge text datasets to understand and generate human language.
+
+### Examples
+
+- GPT-4
+- Claude
+- Gemini
+- Llama
+
+---
+
+## 5. What are Tokens?
+
+### Answer
+
+Tokens are small pieces of text processed by LLMs.
+
+### Example
+
+```txt
+"JavaScript is awesome"
+```
+
+Could become:
+
+```txt
+["Java", "Script", " is", " awesome"]
+```
+
+### Important
+
+LLMs charge based on tokens.
+
+:contentReference[oaicite:4]{index=4}
+
+---
+
+# 🧠 Machine Learning Basics
+
+---
+
+## 6. What is supervised learning?
+
+### Answer
+
+Model learns using labeled data.
+
+### Example
+
+```txt
+Email → Spam / Not Spam
+```
+
+---
+
+## 7. What is unsupervised learning?
+
+### Answer
+
+Model finds hidden patterns without labels.
+
+### Example
+
+Customer segmentation.
+
+---
+
+## 8. What is overfitting?
+
+### Answer
+
+Model memorizes training data instead of learning patterns.
+
+### Symptoms
+
+- High training accuracy
+- Poor real-world performance
+
+### Solution
+
+- More data
+- Regularization
+- Dropout
+- Validation datasets
+
+---
+
+## 9. What is a neural network?
+
+### Answer
+
+A neural network is a system inspired by the human brain.
+
+### Structure
+
+```txt
+Input Layer
+Hidden Layers
+Output Layer
+```
+
+---
+
+## 10. What is an activation function?
+
+### Popular Activation Functions
+
+- ReLU
+- Sigmoid
+- Tanh
+
+### Purpose
+
+Helps neural networks learn complex patterns.
+
+---
+
+# 🔥 LLMs & Transformers
+
+---
+
+## 11. What is a Transformer architecture?
+
+### Answer
+
+Transformers are deep learning architectures used in modern LLMs.
+
+### Key Feature
+
+Self-attention mechanism.
+
+### Why Important?
+
+Transformers made ChatGPT possible.
+
+:contentReference[oaicite:5]{index=5}
+
+---
+
+## 12. What is self-attention?
+
+### Answer
+
+Self-attention helps models understand word relationships.
+
+### Example
+
+```txt
+"The bank near the river"
+```
+
+AI understands "bank" means river bank, not finance.
+
+---
+
+## 13. What are embeddings?
+
+### Answer
+
+Embeddings are vector representations of text.
+
+### Use Cases
+
+- Semantic search
+- Similarity matching
+- RAG systems
+
+### Example
+
+```txt
+"dog" and "puppy"
+```
+
+Have similar vector positions.
+
+:contentReference[oaicite:6]{index=6}
+
+---
+
+## 14. What is context window?
+
+### Answer
+
+Maximum amount of tokens an LLM can process at once.
+
+### Example
+
+128K context window.
+
+### Important
+
+Larger context = better long-document understanding.
+
+---
+
+## 15. What is hallucination in AI?
+
+### Answer
+
+When AI generates false or incorrect information confidently.
+
+### Example
+
+Fake legal cases generated by AI.
+
+### Solutions
+
+- RAG
+- Better prompts
+- Validation layers
+- Human review
+
+---
+
+# ✍️ Prompt Engineering
+
+---
+
+## 16. What is Prompt Engineering?
+
+### Answer
+
+Designing prompts to get accurate outputs from LLMs.
+
+### Types
+
+- Zero-shot
+- Few-shot
+- Chain-of-thought
+- Role prompting
+
+:contentReference[oaicite:7]{index=7}
+
+---
+
+## 17. What is zero-shot prompting?
+
+### Example
+
+```txt
+Translate English to French.
+```
+
+No examples provided.
+
+---
+
+## 18. What is few-shot prompting?
+
+### Answer
+
+Providing examples inside prompt.
+
+### Example
+
+```txt
+English: Hello
+French: Bonjour
+
+English: Thank you
+French:
+```
+
+---
+
+## 19. What is Chain-of-Thought prompting?
+
+### Answer
+
+Asks AI to explain reasoning step-by-step.
+
+### Example
+
+```txt
+Think step by step.
+```
+
+---
+
+## 20. What is role prompting?
+
+### Example
+
+```txt
+You are a senior Node.js architect.
+```
+
+Improves response quality.
+
+---
+
+# 🗄️ Embeddings & Vector Databases
+
+---
+
+## 21. What is a vector database?
+
+### Answer
+
+Stores embeddings for semantic search.
+
+### Popular Vector DBs
+
+- Pinecone
+- Weaviate
+- ChromaDB
+- Qdrant
+
+---
+
+## 22. Why use vector databases?
+
+### Use Cases
+
+- AI search
+- Chat with PDFs
+- Recommendation systems
+- RAG systems
+
+---
+
+## 23. What is cosine similarity?
+
+### Answer
+
+Measures similarity between vectors.
+
+### Important
+
+Used heavily in semantic search.
+
+---
+
+## 24. What is semantic search?
+
+### Answer
+
+Search based on meaning instead of keywords.
+
+### Example
+
+```txt
+"car repair"
+```
+
+Can match:
+
+```txt
+"automobile mechanic"
+```
+
+---
+
+## 25. What is chunking in RAG?
+
+### Answer
+
+Breaking documents into smaller pieces before embedding.
+
+### Why Important?
+
+Improves retrieval accuracy.
+
+---
+
+# 🔎 RAG Systems
+
+---
+
+## 26. What is RAG?
+
+### Answer
+
+RAG = Retrieval-Augmented Generation.
+
+Combines:
+- LLM
+- Vector DB
+- External knowledge
+
+### Flow
+
+```txt
+User Query
+→ Vector Search
+→ Relevant Chunks
+→ LLM Response
+```
+
+:contentReference[oaicite:8]{index=8}
+
+---
+
+## 27. Why use RAG instead of fine-tuning?
+
+| RAG | Fine-Tuning |
+|---|---|
+| Dynamic knowledge | Static training |
+| Cheaper | Expensive |
+| Easy updates | Retraining needed |
+
+---
+
+## 28. What are common RAG problems?
+
+### Issues
+
+- Bad chunking
+- Poor embeddings
+- Irrelevant retrieval
+- Hallucinations
+
+---
+
+## 29. How do you improve RAG quality?
+
+### Techniques
+
+- Better chunking
+- Hybrid search
+- Re-ranking
+- Metadata filtering
+
+---
+
+## 30. Explain hybrid search.
+
+### Answer
+
+Combines:
+- Keyword search
+- Semantic search
+
+For better retrieval accuracy.
+
+---
+
+# 🤖 AI Agents
+
+---
+
+## 31. What is an AI Agent?
+
+### Answer
+
+AI agents can:
+- Think
+- Plan
+- Use tools
+- Take actions
+
+### Example
+
+AI booking flights automatically.
+
+:contentReference[oaicite:9]{index=9}
+
+---
+
+## 32. What is tool calling?
+
+### Answer
+
+LLMs calling APIs/functions dynamically.
+
+### Example
+
+```txt
+Get weather data
+Send email
+Create calendar event
+```
+
+---
+
+## 33. What is function calling in OpenAI?
+
+### Answer
+
+LLM decides when to call predefined functions.
+
+### Example
+
+```js
+getWeather(city)
+```
+
+---
+
+## 34. What is agent memory?
+
+### Types
+
+- Short-term memory
+- Long-term memory
+
+### Use Cases
+
+- Personalized chatbots
+- AI assistants
+
+---
+
+## 35. What are multi-agent systems?
+
+### Answer
+
+Multiple AI agents collaborating together.
+
+### Example
+
+```txt
+Research Agent
+→ Coding Agent
+→ Testing Agent
+```
+
+---
+
+# 🎯 Fine-Tuning
+
+---
+
+## 36. What is fine-tuning?
+
+### Answer
+
+Training pre-trained model on custom data.
+
+### Example
+
+Legal AI chatbot trained on legal documents.
+
+:contentReference[oaicite:10]{index=10}
+
+---
+
+## 37. Fine-tuning vs Prompt Engineering?
+
+| Fine-Tuning | Prompt Engineering |
+|---|---|
+| Retrains model | Changes prompt |
+| Expensive | Cheap |
+| Better customization | Faster |
+
+---
+
+## 38. What is LoRA?
+
+### Answer
+
+Low-Rank Adaptation.
+
+Efficient fine-tuning technique.
+
+### Benefits
+
+- Lower GPU requirements
+- Faster training
+
+---
+
+## 39. What is RLHF?
+
+### Answer
+
+Reinforcement Learning from Human Feedback.
+
+Used to align LLM behavior.
+
+### Used In
+
+- ChatGPT
+- Claude
+
+---
+
+## 40. What is model quantization?
+
+### Answer
+
+Reducing model size for faster inference.
+
+### Benefits
+
+- Lower memory
+- Faster responses
+- Edge deployment
+
+---
+
+# 🏗️ AI System Design
+
+---
+
+## 41. How would you design ChatGPT-like architecture?
+
+### Components
+
+```txt
+Frontend
+→ Backend API
+→ LLM
+→ Vector DB
+→ Cache
+→ Monitoring
+```
+
+---
+
+## 42. How do you reduce AI latency?
+
+### Techniques
+
+- Caching
+- Streaming responses
+- Smaller models
+- Quantization
+- Parallel processing
+
+---
+
+## 43. How do you monitor AI systems?
+
+### Metrics
+
+- Latency
+- Token usage
+- Hallucination rate
+- Cost
+- User feedback
+
+---
+
+## 44. How do you secure AI applications?
+
+### Security Risks
+
+- Prompt injection
+- Data leakage
+- Jailbreaking
+- PII exposure
+
+### Solutions
+
+- Validation
+- Guardrails
+- Content filtering
+- RBAC
+
+:contentReference[oaicite:11]{index=11}
+
+---
+
+## 45. What are AI guardrails?
+
+### Answer
+
+Rules preventing unsafe AI outputs.
+
+### Example
+
+Blocking:
+- Harmful content
+- Sensitive data leakage
+
+---
+
+# ⚙️ Production AI Engineering
+
+---
+
+## 46. What frameworks are popular for AI apps in JavaScript?
+
+### Popular JS AI Frameworks
+
+| Framework | Use |
+|---|---|
+| LangChain.js | AI workflows |
+| Vercel AI SDK | Streaming AI apps |
+| LlamaIndex | RAG |
+| OpenAI SDK | LLM integration |
+
+---
+
+## 47. How do you stream AI responses in Node.js?
+
+### Example
+
+```js
+for await (const chunk of stream) {
+  process.stdout.write(chunk);
+}
+```
+
+---
+
+## 48. How do you manage AI costs?
+
+### Techniques
+
+- Prompt optimization
+- Response caching
+- Smaller models
+- Rate limiting
+
+---
+
+## 49. What databases are commonly used in AI systems?
+
+### Examples
+
+- PostgreSQL
+- MongoDB
+- Redis
+- Pinecone
+- Weaviate
+
+---
+
+## 50. What is inference?
+
+### Answer
+
+Using trained model to generate predictions/responses.
+
+### Example
+
+User asks ChatGPT question → model generates response.
+
+---
+
+# 💻 JavaScript AI Ecosystem
+
+---
+
+## 51. Why is JavaScript becoming popular in AI apps?
+
+### Reasons
+
+- Full-stack AI apps
+- Real-time streaming
+- Next.js AI apps
+- AI SaaS products
+
+---
+
+## 52. How do you integrate OpenAI API in Node.js?
+
+### Example
+
+```js
+import OpenAI from "openai";
+
+const client = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+
+const response = await client.chat.completions.create({
+  model: "gpt-4.1",
+  messages: [
+    {
+      role: "user",
+      content: "Hello",
+    },
+  ],
+});
+```
+
+---
+
+## 53. What is LangChain?
+
+### Answer
+
+Framework for building LLM applications.
+
+### Features
+
+- Chains
+- Agents
+- RAG
+- Memory
+
+---
+
+## 54. What is Vercel AI SDK?
+
+### Answer
+
+SDK for building streaming AI apps in Next.js.
+
+### Features
+
+- Streaming UI
+- Multiple providers
+- React hooks
+
+---
+
+## 55. What is MCP (Model Context Protocol)?
+
+### Answer
+
+Standard protocol for connecting AI models with tools and systems.
+
+### Examples
+
+- File systems
+- Databases
+- IDEs
+
+---
+
+# 🧠 Scenario-Based Questions
+
+---
+
+## 56. How would you build Chat with PDF?
+
+### Architecture
+
+```txt
+PDF Upload
+→ Chunking
+→ Embeddings
+→ Vector DB
+→ Retrieval
+→ LLM Answer
+```
+
+---
+
+## 57. How would you reduce hallucinations?
+
+### Techniques
+
+- RAG
+- Better prompts
+- Source citations
+- Validation pipelines
+
+---
+
+## 58. How would you build AI customer support system?
+
+### Components
+
+- LLM
+- CRM integration
+- RAG
+- Human escalation
+- Analytics
+
+---
+
+## 59. How would you optimize AI response speed?
+
+### Solutions
+
+- Streaming
+- Caching
+- Smaller models
+- CDN
+- Async processing
+
+---
+
+## 60. Explain one AI project you built.
+
+### Best Answer Structure
+
+```txt
+Problem
+→ Architecture
+→ AI model used
+→ Challenges
+→ Optimization
+→ Results
+```
+
+---
+
+# 🚀 Most Important Topics for AI Engineer Interviews
+
+## Must Know Topics
+
+### AI Fundamentals
+- Transformers
+- Embeddings
+- Tokens
+- Attention
+
+### GenAI
+- Prompt engineering
+- RAG
+- Fine-tuning
+- Agents
+
+### Backend
+- Node.js
+- APIs
+- Streaming
+- WebSockets
+
+### Production
+- Scaling
+- Monitoring
+- Security
+- Cost optimization
+
+### Frontend
+- Next.js AI apps
+- Streaming UI
+- Chat interfaces
+
+---
+
+# 🛠️ Recommended Stack for JS AI Engineers
+
+| Category | Tools |
+|---|---|
+| Frontend | Next.js |
+| Backend | Node.js |
+| AI SDK | OpenAI SDK |
+| AI Framework | LangChain |
+| Vector DB | Pinecone |
+| Cache | Redis |
+| Database | PostgreSQL |
+| Deployment | Docker + AWS |
+
+---
+
+# 📌 Senior-Level AI Interview Tips
+
+✅ Focus on AI architecture  
+✅ Explain real-world AI systems  
+✅ Discuss hallucination handling  
+✅ Understand RAG deeply  
+✅ Learn streaming responses  
+✅ Explain AI security risks  
+✅ Know cost optimization strategies  
+✅ Build real AI side projects  
+
+---
+
+# 🔥 Most Asked AI Topics in 2026
+
+- AI Agents
+- RAG
+- MCP
+- Prompt Engineering
+- Vector Databases
+- AI Security
+- Fine-Tuning
+- Multi-Agent Systems
+- AI SaaS Architecture
+- AI Coding Assistants
+
+Google and major companies are increasingly testing AI-assisted engineering workflows in interviews. :contentReference[oaicite:12]{index=12}
+
+---
