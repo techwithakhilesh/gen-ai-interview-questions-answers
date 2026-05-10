@@ -1073,6 +1073,4 @@ Problem
 - AI SaaS Architecture
 - AI Coding Assistants
 
-Google and major companies are increasingly testing AI-assisted engineering workflows in interviews. :contentReference[oaicite:12]{index=12}
 
----
